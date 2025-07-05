@@ -1,0 +1,17 @@
+# Ignore Jupyter Notebook checkpoint files
+**/.ipynb_checkpoints/
+**/.ipynb_checkpoints/*-checkpoint.ipynb
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore Jupyter notebook runtime files
+*.nbconvert.ipynb
+.ipynb_checkpoints/
+
+# Ignore hidden system files
+.DS_Store
+Thumbs.db
