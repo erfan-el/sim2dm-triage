@@ -1,4 +1,4 @@
-# 🏥 sim2dm-triage: Synthetic Event Log & Decision Point Labeling for Triage Process
+# 🏥 sim2dm-triage: Generating a Synthetic Event Log and Applying Decision Mining for the Triage Process
 
 This repository provides a simulated healthcare triage event log and supports decision modeling, process mining (PM), and decision mining (DM) experiments.
 
