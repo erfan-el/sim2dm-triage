@@ -8,10 +8,12 @@ This repository provides a simulated healthcare triage event log and supports de
 
 The notebook [`generate_synthetic_triage_eventlog.ipynb`](https://github.com/erfan-el/sim2dm-triage/blob/main/generate_synthetic_triage_eventlog.ipynb) generates a synthetic event log based on a triage process involving patient assessment, treatment routing, and discharge or escalation. It includes:
 
-* Simulated patient vitals (HR, SpO₂, BP, age) and PHI (Patient Health Indicator) classification
-* Rule-based routing logic simulating care paths (e.g., CPR loop, diagnostics, ICU transfer)
-* Event creation with activity labels, timestamps, and event attributes
-* Variant extraction and frequency analysis
+* Definition of a triage process with nine activities.
+* Simulation of patient attributes (heart rate, oxygen saturation, blood pressure, age, consciousness level)
+* Computation of a Patient Health Indicator (PHI) with four severity levels (Stable, Deteriorating, Critical, Life-Threatening)
+* Rule-based routing logic with four decision points (DP1–DP4), including loops and escalation paths
+* Event creation with activity labels, timestamps, and event attributes.
+* Variant extraction and frequency analysis.
 
 📦 **Output:** [`synthetic_triage_eventlog.csv`](https://github.com/erfan-el/sim2dm-triage/blob/main/synthetic_triage_eventlog.csv)
 
