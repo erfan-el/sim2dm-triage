@@ -56,5 +56,6 @@ The notebook [`model_training_for_DM__triage_process.ipynb`](https://github.com/
 - [`decision_tree_DP2.png`](https://github.com/erfan-el/sim2dm-triage/blob/main/decision_tree_DP2.png)
 - [`decision_tree_DP3.png`](https://github.com/erfan-el/sim2dm-triage/blob/main/decision_tree_DP3.png)
 - [`decision_tree_DP4.png` ](https://github.com/erfan-el/sim2dm-triage/blob/main/decision_tree_DP4.png) 
-    *(visual representations of the learned decision rules for each decision point)*
+
+   *(visual representations of the learned decision rules for each decision point)*
 
