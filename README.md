@@ -21,13 +21,24 @@ The notebook [`generate_synthetic_triage_eventlog.ipynb`](https://github.com/erf
 
 ## 🏷️ 2. Event log preprocessing and decision point labeling
 
-The notebook [`triage_eventlog_preprocessing.ipynb`](https://github.com/erfan-el/sim2dm-triage/blob/main/triage_eventlog_preprocessing.ipynb) enhances the synthetic event log by explicitly identifying and labeling decision points in the triage process. In particular, it focuses on four decision points (DP1–DP4) derived from the process structure and routing logic. It features:
+The notebook [`triage_eventlog_preprocessing.ipynb`](https://github.com/erfan-el/sim2dm-triage/blob/main/triage_eventlog_preprocessing.ipynb) loads the synthetic triage event log and prepares labeled datasets for decision mining experiments. It includes:
 
-* Per-case activity sequence analysis
-* Rule-based labeling for DPs
-* Export of the enriched log for further analysis (DM)
+* Loading and sorting the synthetic triage event log
+* Deriving decision labels for four decision points (DP1–DP4) using trace-based rules:
+  - DP1: first activity after A
+  - DP2: labeling based on the C/D sequence before E (with forward/backward filling within each case)
+  - DP3: first activity after E
+  - DP4: first activity after G
+* Encoding categorical attributes and DP labels into numeric features
+* Exporting a fully labeled event log and separate datasets for training decision trees per DP
+  (Each dataset is truncated to contain only events available before the corresponding decision point)
 
-📦 **Output:** [`labeled_triage_eventlog.csv`](https://github.com/erfan-el/sim2dm-triage/blob/main/labeled_triage_eventlog.csv)
+📦 **Output:** 
+- [`labeled_triage_eventlog.csv`](https://github.com/erfan-el/sim2dm-triage/blob/main/labeled_triage_eventlog.csv)
+- [`DP1_labeled_triage_eventlog.csv`](https://github.com/erfan-el/sim2dm-triage/blob/main/DP1_labeled_triage_eventlog.csv)
+- [`DP2_labeled_triage_eventlog.csv`](https://github.com/erfan-el/sim2dm-triage/blob/main/DP2_labeled_triage_eventlog.csv)
+- [`DP3_labeled_triage_eventlog.csv`](https://github.com/erfan-el/sim2dm-triage/blob/main/DP3_labeled_triage_eventlog.csv)
+- [`DP4_labeled_triage_eventlog.csv`](https://github.com/erfan-el/sim2dm-triage/blob/main/DP4_labeled_triage_eventlog.csv)
 
 ---
 
