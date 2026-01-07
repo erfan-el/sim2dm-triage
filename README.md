@@ -42,3 +42,19 @@ The notebook [`triage_eventlog_preprocessing.ipynb`](https://github.com/erfan-el
 
 ---
 
+## 🧠 3. Decision mining model training and rule extraction
+
+The notebook [`model_training_for_DM__triage_process.ipynb`](https://github.com/erfan-el/sim2dm-triage/blob/main/model_training_for_DM__triage_process.ipynb) trains interpretable decision tree models for each decision point in the triage process using the labeled event logs. It focuses on learning and explaining routing decisions at DP1–DP4. It includes:
+
+* Loading DP-specific labeled datasets (DP1–DP4)
+* Training and evaluating decision tree classifiers using different feature sets
+* Extracting human-readable decision rules from trained models
+* Visualizing decision trees for each decision point
+
+📦 **Output:** 
+- [`decision_tree_DP1.png`](https://github.com/erfan-el/sim2dm-triage/blob/main/decision_tree_DP1.png)
+- [`decision_tree_DP2.png`](https://github.com/erfan-el/sim2dm-triage/blob/main/decision_tree_DP2.png)
+- [`decision_tree_DP3.png`](https://github.com/erfan-el/sim2dm-triage/blob/main/decision_tree_DP3.png)
+- [`decision_tree_DP4.png` ](https://github.com/erfan-el/sim2dm-triage/blob/main/decision_tree_DP4.png) 
+    *(visual representations of the learned decision rules for each decision point)*
+
